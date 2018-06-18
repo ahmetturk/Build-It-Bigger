@@ -5,9 +5,6 @@ import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
 import com.udacity.gradle.jokeprovider.JokeProvider;
 
-/**
- * An endpoint class we are exposing
- */
 @Api(
         name = "jokeApi",
         version = "v1",
@@ -20,7 +17,7 @@ import com.udacity.gradle.jokeprovider.JokeProvider;
 public class MyEndpoint {
 
     /**
-     * A simple endpoint method that takes a name and says Hi back
+     * returns a Joke by using JokeProvider java library
      */
     @ApiMethod(name = "getJoke")
     public Joke getJoke() {
